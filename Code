@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+import os
+import requests
+
+# Path to the data
+path = "/data/feedback"
+
+keys = ["title", "name", "date", "feedback"]
+
+folder = os.listdir(path)
+for file in folder:
+    keycount = 0
